@@ -47,6 +47,7 @@ abstract class HTMLBuilder {
     final num? interpolationDecay,
     // Lighting & Env Attributes
     final String? skyboxImage,
+    final String? skyboxHeight,
     final String? environmentImage,
     final num? exposure,
     final num? shadowIntensity,
@@ -283,7 +284,7 @@ abstract class HTMLBuilder {
     // skybox-height
     if (skyboxHeight != null) {
       modelViewerHtml
-          .write(' skybox-image="${htmlEscape.convert(skyboxHeight)}"');
+          .write(' skybox-height="${htmlEscape.convert(skyboxHeight)}"');
     }
     // environment-image
     if (environmentImage != null) {
