@@ -94,6 +94,7 @@ class ModelViewerState extends State<ModelViewer> {
       interpolationDecay: widget.interpolationDecay,
       // Lighting & Env Attributes
       skyboxImage: widget.skyboxImage,
+      skyboxHeight: widget.skyboxHeight,
       environmentImage: widget.environmentImage,
       exposure: widget.exposure,
       shadowIntensity: widget.shadowIntensity,
