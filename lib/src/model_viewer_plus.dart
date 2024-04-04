@@ -90,6 +90,7 @@ class ModelViewer extends StatefulWidget {
     this.overwriteNodeValidatorBuilder,
     this.javascriptChannels,
     this.onWebViewCreated,
+    this.skyboxHeight,
     super.key,
   });
 
@@ -428,6 +429,14 @@ class ModelViewer extends StatefulWidget {
   ///
   /// `<model-viewer>` official document: https://modelviewer.dev/docs/#entrydocs-lightingandenv-attributes-skyboxImage
   final String? skyboxImage;
+
+  /// Causes the skybox to be projected onto the ground plane. The height indicates the camera's 
+  /// distance above the ground and acts to scale the image at ground level to the correct size. Accepts 
+  /// units in meters ("m"), centimeters ("cm"), or millimeters ("mm"). The default value of 0m disables ground 
+  /// projection.
+  ///
+  /// `<model-viewer>` official document: https://modelviewer.dev/docs/#entrydocs-lightingandenv-attributes-skyboxHeight
+  final String? skyboxHeight;
 
   /// Controls the environmental reflection of the model. Normally if
   /// skybox-image is set, that image will also be used for the environment-image.
