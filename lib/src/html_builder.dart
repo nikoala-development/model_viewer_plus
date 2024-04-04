@@ -280,6 +280,11 @@ abstract class HTMLBuilder {
       modelViewerHtml
           .write(' skybox-image="${htmlEscape.convert(skyboxImage)}"');
     }
+    // skybox-height
+    if (skyboxHeight != null) {
+      modelViewerHtml
+          .write(' skybox-image="${htmlEscape.convert(skyboxHeight)}"');
+    }
     // environment-image
     if (environmentImage != null) {
       modelViewerHtml.write(
