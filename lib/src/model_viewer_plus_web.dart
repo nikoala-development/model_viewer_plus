@@ -204,6 +204,7 @@ NodeValidatorBuilder defaultNodeValidatorBuilder = NodeValidatorBuilder.common()
 
       // Lighting & Env Attributes
       'skybox-image',
+      'skybox-height',
       'environment-image',
       'exposure',
       'shadow-intensity',
